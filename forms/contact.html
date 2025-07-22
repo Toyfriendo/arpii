@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* basic styling – tweak as you like */
+    body{font-family:sans-serif;background:#f9fafc;margin:0;display:flex;justify-content:center;align-items:center;min-height:100vh}
+    .card{background:#fff;padding:2rem 2.5rem;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.12);max-width:480px;width:100%}
+    h1{margin-top:0;margin-bottom:1rem;font-size:1.75rem;text-align:center}
+    label{display:block;margin:.75rem 0 .25rem}
+    input,textarea{width:100%;padding:.65rem;border:1px solid #d0d5dd;border-radius:6px;font-size:1rem}
+    textarea{resize:vertical;min-height:140px}
+    button{margin-top:1.25rem;width:100%;padding:.8rem;border:none;border-radius:6px;background:#2563eb;color:#fff;font-size:1.05rem;cursor:pointer}
+    button:hover{background:#1d4ed8}
+    small{display:block;margin-top:.75rem;font-size:.8rem;color:#6b7280;text-align:center}
+  </style>
+</head>
+<body>
+  <form class="card"
+        action="mailto:yourname@example.com"
+        method="post"
+        enctype="text/plain">
+    <h1>Contact Us</h1>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="Subject" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+    <small>
+      Clicking “Send” opens your default e-mail app.<br>
+      If nothing happens, please send an e-mail to <a href="mailto:yourname@example.com">yourname@example.com</a>.
+    </small>
+  </form>
+</body>
+</html>
